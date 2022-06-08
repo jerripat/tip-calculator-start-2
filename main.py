@@ -9,4 +9,7 @@
 print("Welcome to the tip calculator!")
 tBill = input("What was the total bill? ")
 tip = input("How much tip would you like to give? 10, 12, or 15? ")
+tip = (int(tip) / 100)
 cnt = input("How many people to split the bill? ")
+totalTip = (float(tBill) * float(tip) / int(cnt))
+print("Each person should pay: ${:.2f}".format(totalTip))
